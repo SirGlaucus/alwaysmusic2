@@ -13,7 +13,7 @@ const nuevo = async (nombre, rut, curso, nivel, client) => {
         await client.query('COMMIT;')
         console.log(`Estudiante ${nombre} agregado con exito`)
     } catch (error_consulta) {
-        console.log(error_consulta.code);
+        console.log(error_consulta.code)
     }
 }
 
